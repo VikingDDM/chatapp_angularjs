@@ -1,0 +1,189 @@
+.chat-component {
+  display: flex;
+  justify-content: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-flow: column;
+  margin-top: 40px;
+  width: 1240px;
+  height: 800px;
+  background: #f2f2fd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.chat__wrapper {
+  height: calc(100% - 68px);
+  display: flex;
+  flex-flow: row;
+}
+
+.title {
+  margin: 20px;
+  font-size: 28px;
+  color: #464b57;
+  font-weight: bold;
+}
+
+.rooms {
+  background: #f2f2fd;
+  height: 100%;
+  width: 300px;
+  margin-right: 30px;
+  padding-left: 20px;
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+}
+
+.rooms__list {
+  overflow: auto;
+  padding-right: 5px;
+  margin-bottom: 25px;
+}
+
+.rooms li {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.rooms li span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.room-icon {
+  margin: 10px;
+  width: 22px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #eaa4bf;
+}
+
+.chat {
+  padding-top: 20px;
+  width: 450px;
+  /* background: rgba(255,255,255,0.7); */
+}
+
+.chat__header {
+  margin-bottom: 20px;
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4c515d;
+  border-bottom: 1px solid #d3d6df;
+  overflow: hidden;
+}
+
+.chat__header i {
+  margin: 10px;
+}
+
+.chat__header span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.addroom__button {
+  cursor: pointer;
+}
+
+.chat__content {
+  display: flex;
+  height: 550px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.chat__footer {
+  display: flex;
+}
+
+.addroom {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.addroom input {
+  background-color: transparent;
+  border-bottom: 1px solid #d3d6df;
+  color: #84888e;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.addroom input:focus {
+  border-bottom: 1px solid #2b8cf1;
+}
+
+.addroom button {
+  background: #2b8cf1;
+  height: 40px;
+  border: none;
+  color: white;
+  padding: 0 30px;
+}
+
+.messages {
+  width: 100%;
+}
+
+.text-message {
+  width: 100%;
+  position: relative;
+}
+
+.text-message input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.send-message {
+  position: absolute;
+  right: 13px;
+  top: 9px;
+  background: #5ba3ee;
+  color: white;
+  display: flex;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.users {
+  width: 250px;
+  margin-left: 15px;
+}
+
+/*
+ *  SCROLL BAR
+ */
+
+.rooms__list::-webkit-scrollbar,
+.chat__content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat__content::-webkit-scrollbar-thumb,
+.rooms__list::-webkit-scrollbar-thumb  {
+  border-radius: 10px;
+  background-color: #c1c5cd;
+}
